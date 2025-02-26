@@ -1,0 +1,344 @@
+// Знаходимо елемент за його ID
+const textField1 = document.querySelector('#alpaca4'); // ID текстового поля
+const textToInsert1 = 'Vasia'; // Нумерований текст
+if (textField1) {
+    textField1.value = textToInsert1;
+    const event = new Event('input', { bubbles: true });
+    textField1.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField2 = document.querySelector('#alpaca5');
+const textToInsert2 = 'Levosiuk';
+if (textField2) {
+    textField2.value = textToInsert2;
+    const event = new Event('input', { bubbles: true });
+    textField2.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField3 = document.querySelector('#alpaca6');
+const textToInsert3 = 'sjdflksdjf@gmail.com';
+if (textField3) {
+    textField3.value = textToInsert3;
+    const event = new Event('input', { bubbles: true });
+    textField3.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField4 = document.querySelector('#alpaca8');
+const textToInsert4 = '2133123';
+if (textField4) {
+    textField4.value = textToInsert4;
+    const event = new Event('input', { bubbles: true });
+    textField4.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField5 = document.querySelector('#alpaca18');
+const textToInsert5 = 'sdaasdasd';
+if (textField5) {
+    textField5.value = textToInsert5;
+    const event = new Event('input', { bubbles: true });
+    textField5.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField6 = document.querySelector('#alpaca19');
+const textToInsert6 = 'asdasdasd';
+if (textField6) {
+    textField6.value = textToInsert6;
+    const event = new Event('input', { bubbles: true });
+    textField6.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField7 = document.querySelector('#alpaca20');
+const textToInsert7 = '2';
+if (textField7) {
+    textField7.value = textToInsert7;
+    const event = new Event('input', { bubbles: true });
+    textField7.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField8 = document.querySelector('#alpaca21');
+const textToInsert8 = '1';
+if (textField8) {
+    textField8.value = textToInsert8;
+    const event = new Event('input', { bubbles: true });
+    textField8.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField9 = document.querySelector('#alpaca22');
+const textToInsert9 = '98-123';
+if (textField9) {
+    textField9.value = textToInsert9;
+    const event = new Event('input', { bubbles: true });
+    textField9.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField10 = document.querySelector('#alpaca23');
+const textToInsert10 = 'asdasdasd';
+if (textField10) {
+    textField10.value = textToInsert10;
+    const event = new Event('input', { bubbles: true });
+    textField10.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField11 = document.querySelector('#alpaca24');
+const textToInsert11 = '123123123';
+if (textField11) {
+    textField11.value = textToInsert11;
+    const event = new Event('input', { bubbles: true });
+    textField11.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+const textField12 = document.querySelector('#alpaca25');
+const textToInsert12 = 'asdasdasd';
+if (textField12) {
+    textField12.value = textToInsert12;
+    const event = new Event('input', { bubbles: true });
+    textField12.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+function setDropdownValueById(selectId, value) {
+    const selectElement = document.getElementById(selectId);
+    if (selectElement) {
+        // Встановлення значення за атрибутом value
+        selectElement.value = value;
+        selectElement.dispatchEvent(new Event('change', { bubbles: true })); // Викликаємо подію 'change'
+        console.log(`У полі з ID "${selectId}" обрано значення "${value}".`);
+    } else {
+        console.warn(`Поле з ID "${selectId}" не знайдено.`);
+    }
+}
+
+// Виклик функції для конкретного поля
+setDropdownValueById("alpaca9", "asdadsads"); // Заміни "op1" на значення, яке потрібно вибрати
+
+function setDropdownValueById(selectId, value) {
+    const selectElement = document.getElementById(selectId);
+    if (selectElement) {
+        // Встановлення значення за атрибутом value
+        selectElement.value = value;
+        selectElement.dispatchEvent(new Event('change', { bubbles: true })); // Викликаємо подію 'change'
+        console.log(`У полі з ID "${selectId}" обрано значення "${value}".`);
+    } else {
+        console.warn(`Поле з ID "${selectId}" не знайдено.`);
+    }
+}
+
+// Виклик функції для конкретного поля
+setDropdownValueById("alpaca10", "asdasdd"); // Заміни "op1" на значення, яке потрібно вибрати
+
+// Радіо-кнопка 1
+const radioButton1 = document.querySelector('input[name="field15"][value="1515"]');
+if (radioButton1) {
+    radioButton1.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton1.dispatchEvent(event);
+    console.log('Радіо-кнопка 1 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 1 не знайдена.');
+}
+
+// Радіо-кнопка 2
+const radioButton2 = document.querySelector('input[name="field16"][value="1616"]');
+if (radioButton2) {
+    radioButton2.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton2.dispatchEvent(event);
+    console.log('Радіо-кнопка 2 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 2 не знайдена.');
+}
+
+// Радіо-кнопка 3
+const radioButton3 = document.querySelector('input[name="field29"][value="1717"]');
+if (radioButton3) {
+    radioButton3.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton3.dispatchEvent(event);
+    console.log('Радіо-кнопка 3 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 3 не знайдена.');
+}
+
+// Радіо-кнопка 4
+const radioButton4 = document.querySelector('input[name="field30"][value="1818"]');
+if (radioButton4) {
+    radioButton4.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton4.dispatchEvent(event);
+    console.log('Радіо-кнопка 4 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 4 не знайдена.');
+}
+
+// Радіо-кнопка 5
+const radioButton5 = document.querySelector('input[name="field31"][value="1919"]');
+if (radioButton5) {
+    radioButton5.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton5.dispatchEvent(event);
+    console.log('Радіо-кнопка 5 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 5 не знайдена.');
+}
+
+// Радіо-кнопка 6
+const radioButton6 = document.querySelector('input[name="field32"][value="2020"]');
+if (radioButton6) {
+    radioButton6.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton6.dispatchEvent(event);
+    console.log('Радіо-кнопка 6 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 6 не знайдена.');
+}
+
+// Радіо-кнопка 7
+const radioButton7 = document.querySelector('input[name="field33"][value="2121"]');
+if (radioButton7) {
+    radioButton7.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton7.dispatchEvent(event);
+    console.log('Радіо-кнопка 7 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 7 не знайдена.');
+}
+
+// Радіо-кнопка 8
+const radioButton8 = document.querySelector('input[name="field34"][value="2t2t"]');
+if (radioButton8) {
+    radioButton8.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton8.dispatchEvent(event);
+    console.log('Радіо-кнопка 8 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 8 не знайдена.');
+}
+
+// Радіо-кнопка 9
+const radioButton9 = document.querySelector('input[name="field46"][value="2323"]');
+if (radioButton9) {
+    radioButton9.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton9.dispatchEvent(event);
+    console.log('Радіо-кнопка 9 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 9 не знайдена.');
+}
+
+
+// Радіо-кнопка 10
+const radioButton10 = document.querySelector('input[name="field40"][value="2424"]');
+if (radioButton10) {
+    radioButton10.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton10.dispatchEvent(event);
+    console.log('Радіо-кнопка 10 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 10 не знайдена.');
+}
+
+// Радіо-кнопка 11
+const radioButton11 = document.querySelector('input[name="field58"][value="2525"]');
+if (radioButton11) {
+    radioButton11.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton11.dispatchEvent(event);
+    console.log('Радіо-кнопка 11 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 11 не знайдена.');
+}
+
+// Радіо-кнопка 12
+const radioButton12 = document.querySelector('input[name="field41"][value="2626"]');
+if (radioButton12) {
+    radioButton12.checked = true;
+    const event = new Event('change', { bubbles: true });
+    radioButton12.dispatchEvent(event);
+    console.log('Радіо-кнопка 12 успішно вибрана.');
+} else {
+    console.error('Радіо-кнопка 12 не знайдена.');
+}
+
+// Вибір першого чекбокса з name="field36"
+const checkbox1 = document.querySelector('input[data-checkbox-value="op8"][data-checkbox-index="7"]');
+
+if (checkbox1) {
+    checkbox1.checked = true; // Встановлюємо чекбокс як відмічений
+    const event1 = new Event('change', { bubbles: true });
+    checkbox1.dispatchEvent(event1); // Викликаємо подію зміни
+    console.log('Чекбокс 1 відмічено.');
+} else {
+    console.error('Чекбокс 1 не знайдено.');
+}
+
+// Вибір другого чекбокса з name="field38"
+const checkbox2 = document.querySelector('div[name="field38"] input[data-checkbox-value="op2"][data-checkbox-index="1"]');
+
+if (checkbox2) {
+    checkbox2.checked = true; // Встановлюємо чекбокс як відмічений
+    const event2 = new Event('change', { bubbles: true });
+    checkbox2.dispatchEvent(event2); // Викликаємо подію зміни
+    console.log('Чекбокс 2 відмічено.');
+} else {
+    console.error('Чекбокс 2 не знайдено.');
+}
+
+// Знаходимо елемент за його ID
+const textField56 = document.querySelector('#alpaca56'); // ID текстового поля
+const textToInsert56 = '!!!'; // Нумерований текст
+if (textField56) {
+    textField56.value = textToInsert56;
+    const event = new Event('input', { bubbles: true });
+    textField56.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
+
+
+// Знаходимо елемент за його ID
+const textField57 = document.querySelector('#alpaca57'); // ID текстового поля
+const textToInsert57 = '!!!!'; // Нумерований текст
+if (textField57) {
+    textField57.value = textToInsert57;
+    const event = new Event('input', { bubbles: true });
+    textField57.dispatchEvent(event);
+    console.log('Текст успішно вставлено.');
+} else {
+    console.error('Текстове поле не знайдено.');
+}
