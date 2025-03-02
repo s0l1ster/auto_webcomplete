@@ -6,6 +6,7 @@ from PIL import Image
 from tkinter.font import Font
 import rows_def
 number = 1
+s = ''
 
 root = CTk()
 
@@ -529,6 +530,8 @@ def g_next():
     root.clipboard_clear()
     root.clipboard_append(c)
     print("Number of row: ",number)
+    s = "Number of row: " + str(number)
+    
 
 
 def reset_script():

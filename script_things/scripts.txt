@@ -1,6 +1,6 @@
 // Знаходимо елемент за його ID
 const textField1 = document.querySelector('#alpaca4'); // ID текстового поля
-const textToInsert1 = 'Vasia'; // Нумерований текст
+const textToInsert1 = 'Robert'; // Нумерований текст
 if (textField1) {
     textField1.value = textToInsert1;
     const event = new Event('input', { bubbles: true });
@@ -11,7 +11,7 @@ if (textField1) {
 }
 
 const textField2 = document.querySelector('#alpaca5');
-const textToInsert2 = 'Levosiuk';
+const textToInsert2 = 'Lewandowski';
 if (textField2) {
     textField2.value = textToInsert2;
     const event = new Event('input', { bubbles: true });
@@ -22,7 +22,7 @@ if (textField2) {
 }
 
 const textField3 = document.querySelector('#alpaca6');
-const textToInsert3 = 'sjdflksdjf@gmail.com';
+const textToInsert3 = 'robert9gmail com';
 if (textField3) {
     textField3.value = textToInsert3;
     const event = new Event('input', { bubbles: true });
@@ -33,7 +33,7 @@ if (textField3) {
 }
 
 const textField4 = document.querySelector('#alpaca8');
-const textToInsert4 = '2133123';
+const textToInsert4 = '97635463';
 if (textField4) {
     textField4.value = textToInsert4;
     const event = new Event('input', { bubbles: true });
@@ -44,7 +44,7 @@ if (textField4) {
 }
 
 const textField5 = document.querySelector('#alpaca18');
-const textToInsert5 = 'sdaasdasd';
+const textToInsert5 = 'Warszawa';
 if (textField5) {
     textField5.value = textToInsert5;
     const event = new Event('input', { bubbles: true });
@@ -55,7 +55,7 @@ if (textField5) {
 }
 
 const textField6 = document.querySelector('#alpaca19');
-const textToInsert6 = 'asdasdasd';
+const textToInsert6 = 'Ulica dowolna';
 if (textField6) {
     textField6.value = textToInsert6;
     const event = new Event('input', { bubbles: true });
@@ -66,7 +66,7 @@ if (textField6) {
 }
 
 const textField7 = document.querySelector('#alpaca20');
-const textToInsert7 = '2';
+const textToInsert7 = '1';
 if (textField7) {
     textField7.value = textToInsert7;
     const event = new Event('input', { bubbles: true });
@@ -77,7 +77,7 @@ if (textField7) {
 }
 
 const textField8 = document.querySelector('#alpaca21');
-const textToInsert8 = '1';
+const textToInsert8 = '2';
 if (textField8) {
     textField8.value = textToInsert8;
     const event = new Event('input', { bubbles: true });
@@ -88,7 +88,7 @@ if (textField8) {
 }
 
 const textField9 = document.querySelector('#alpaca22');
-const textToInsert9 = '98-123';
+const textToInsert9 = '76-999';
 if (textField9) {
     textField9.value = textToInsert9;
     const event = new Event('input', { bubbles: true });
@@ -99,7 +99,7 @@ if (textField9) {
 }
 
 const textField10 = document.querySelector('#alpaca23');
-const textToInsert10 = 'asdasdasd';
+const textToInsert10 = 'Tak';
 if (textField10) {
     textField10.value = textToInsert10;
     const event = new Event('input', { bubbles: true });
@@ -110,7 +110,7 @@ if (textField10) {
 }
 
 const textField11 = document.querySelector('#alpaca24');
-const textToInsert11 = '123123123';
+const textToInsert11 = '723456234';
 if (textField11) {
     textField11.value = textToInsert11;
     const event = new Event('input', { bubbles: true });
@@ -121,7 +121,7 @@ if (textField11) {
 }
 
 const textField12 = document.querySelector('#alpaca25');
-const textToInsert12 = 'asdasdasd';
+const textToInsert12 = 'Polskie';
 if (textField12) {
     textField12.value = textToInsert12;
     const event = new Event('input', { bubbles: true });
@@ -144,7 +144,7 @@ function setDropdownValueById(selectId, value) {
 }
 
 // Виклик функції для конкретного поля
-setDropdownValueById("alpaca9", "asdadsads"); // Заміни "op1" на значення, яке потрібно вибрати
+setDropdownValueById("alpaca9", "op0"); // Заміни "op1" на значення, яке потрібно вибрати
 
 function setDropdownValueById(selectId, value) {
     const selectElement = document.getElementById(selectId);
@@ -159,7 +159,7 @@ function setDropdownValueById(selectId, value) {
 }
 
 // Виклик функції для конкретного поля
-setDropdownValueById("alpaca10", "asdasdd"); // Заміни "op1" на значення, яке потрібно вибрати
+setDropdownValueById("alpaca10", "op3"); // Заміни "op1" на значення, яке потрібно вибрати
 
 // Радіо-кнопка 1
 const radioButton1 = document.querySelector('input[name="field15"][value="op6"]');
@@ -184,7 +184,7 @@ if (radioButton2) {
 }
 
 // Радіо-кнопка 3
-const radioButton3 = document.querySelector('input[name="field29"][value="op1"]');
+const radioButton3 = document.querySelector('input[name="field29"][value="op2"]');
 if (radioButton3) {
     radioButton3.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -195,7 +195,7 @@ if (radioButton3) {
 }
 
 // Радіо-кнопка 4
-const radioButton4 = document.querySelector('input[name="field30"][value="Taka"]');
+const radioButton4 = document.querySelector('input[name="field30"][value="op2"]');
 if (radioButton4) {
     radioButton4.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -206,7 +206,7 @@ if (radioButton4) {
 }
 
 // Радіо-кнопка 5
-const radioButton5 = document.querySelector('input[name="field31"][value="op1"]');
+const radioButton5 = document.querySelector('input[name="field31"][value="op2"]');
 if (radioButton5) {
     radioButton5.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -217,7 +217,7 @@ if (radioButton5) {
 }
 
 // Радіо-кнопка 6
-const radioButton6 = document.querySelector('input[name="field32"][value="op1"]');
+const radioButton6 = document.querySelector('input[name="field32"][value="op2"]');
 if (radioButton6) {
     radioButton6.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -228,7 +228,7 @@ if (radioButton6) {
 }
 
 // Радіо-кнопка 7
-const radioButton7 = document.querySelector('input[name="field33"][value="op1"]');
+const radioButton7 = document.querySelector('input[name="field33"][value="op2"]');
 if (radioButton7) {
     radioButton7.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -239,7 +239,7 @@ if (radioButton7) {
 }
 
 // Радіо-кнопка 8
-const radioButton8 = document.querySelector('input[name="field34"][value="op1"]');
+const radioButton8 = document.querySelector('input[name="field34"][value="op2"]');
 if (radioButton8) {
     radioButton8.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -250,7 +250,7 @@ if (radioButton8) {
 }
 
 // Радіо-кнопка 9
-const radioButton9 = document.querySelector('input[name="field46"][value="op1"]');
+const radioButton9 = document.querySelector('input[name="field46"][value="op2"]');
 if (radioButton9) {
     radioButton9.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -262,7 +262,7 @@ if (radioButton9) {
 
 
 // Радіо-кнопка 10
-const radioButton10 = document.querySelector('input[name="field40"][value="op2"]');
+const radioButton10 = document.querySelector('input[name="field40"][value="op1"]');
 if (radioButton10) {
     radioButton10.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -273,7 +273,7 @@ if (radioButton10) {
 }
 
 // Радіо-кнопка 11
-const radioButton11 = document.querySelector('input[name="field58"][value="op2"]');
+const radioButton11 = document.querySelector('input[name="field58"][value="op1"]');
 if (radioButton11) {
     radioButton11.checked = true;
     const event = new Event('change', { bubbles: true });
@@ -284,7 +284,7 @@ if (radioButton11) {
 }
 
 // Радіо-кнопка 12
-const radioButton12 = document.querySelector('input[name="field41"][value="op2"]');
+const radioButton12 = document.querySelector('input[name="field41"][value="op1"]');
 if (radioButton12) {
     radioButton12.checked = true;
     const event = new Event('change', { bubbles: true });

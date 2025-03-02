@@ -1,3 +1,4 @@
+from ast import Lambda
 from tkinter import *
 from customtkinter import *
 import tkinter
@@ -5,11 +6,13 @@ from PIL import Image
 from tkinter.font import Font
 import rows_def
 
+
+n =1
 rows_def.number
 
 root = CTk()
 root.title('Auto')
-root.geometry("200x150")
+root.geometry("200x200")
 
 root.resizable(False, False)
 
@@ -28,6 +31,18 @@ def copy_script():
 root.iconbitmap(r"C:\Users\Vasya\PycharmProjects\pythonProject5\icons\Vasia_and_Illya_AutoProgram_icon.ico")
 set_appearance_mode("dark")
 
+
+
+def number1():
+    global n
+    n +=1
+    
+    
+
+print("!!!!",rows_def.s)
+print(n)
+
+
 button_copy = CTkButton(root, text="Copy",
                         compound="left",
                         fg_color = "transparent",
@@ -36,10 +51,15 @@ button_copy = CTkButton(root, text="Copy",
                         command=copy_script)
 button_copy.pack(pady=10)
 
-button_next = CTkButton(root, text="Next",  compound="left", command=rows_def.g_next)
+button_next = CTkButton(root, text="Next",  compound="left", command=lambda: [number1(),rows_def.g_next()])
 button_next.pack(pady=10)
+
+
 
 button_reset = CTkButton(root, text="Reset",  compound="left", command=rows_def.reset_script)
 button_reset.pack(pady=10)
+
+label_row = CTkLabel(root,text =n)
+label_row.pack()
 
 root.mainloop()
