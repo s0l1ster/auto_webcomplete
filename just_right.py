@@ -39,10 +39,10 @@ try:
         driver.execute_script(file_content)
         
         # Wait for a while before reading the file again (e.g., 5 seconds)
-        time.sleep(30)
+        time.sleep(10)
         submit_button = driver.find_element(By.NAME, "savebutton")  # Locate button by class
         submit_button.click()
-        time.sleep(30)
+        time.sleep(10)
         submit_button_back = driver.find_element(By.NAME, "goback")  # Locate button by class
         submit_button_back.click()
 

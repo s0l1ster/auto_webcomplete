@@ -18,6 +18,8 @@ path_try = r"C:\Users\Vasya\PycharmProjects\pythonProject5\script_things\try.txt
 wb = load_workbook(r'C:\Users\Vasya\PycharmProjects\pythonProject5\exel\auto2.xlsx')
 ws = wb.active
 
+
+
 def nextA(n1):
     search_text = '111'
     n = 'A'

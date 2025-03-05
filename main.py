@@ -1,10 +1,14 @@
 from ast import Lambda
+from concurrent.futures import thread
 from tkinter import *
 from customtkinter import *
 import tkinter
 from PIL import Image
 from tkinter.font import Font
 import rows_def
+# import subprocess
+# import os
+# import threading
 
 
 n =1
@@ -26,10 +30,16 @@ def copy_script():
     root.clipboard_append(c)
 
 
-
+def run_auto():
+    from subprocess import Popen
+    Popen(["python", "just_right.py"])
+    
 
 root.iconbitmap(r"C:\Users\Vasya\PycharmProjects\pythonProject5\icons\Vasia_and_Illya_AutoProgram_icon.ico")
 set_appearance_mode("dark")
+
+
+
 
 
 
@@ -51,12 +61,29 @@ button_copy = CTkButton(root, text="Copy",
                         command=copy_script)
 button_copy.pack(pady=10)
 
-button_next = CTkButton(root, text="Next",  compound="left", command=lambda: [number1(),rows_def.g_next()])
+button_next = CTkButton(root, text="Next",  
+                        compound="left",
+                        fg_color = "transparent",
+                        border_color="#FFCC70",
+                        border_width=2,
+                        command=lambda: [number1(),rows_def.g_next()])
 button_next.pack(pady=10)
 
+button_open_auto = CTkButton(root, text = "Run auto program",
+                             compound = "left",
+                             fg_color = "transparent",
+                             border_color = "#FFCC70",
+                             border_width = 2,
+                             command = run_auto
+                             )
+button_open_auto.pack(pady = 10)
 
-
-button_reset = CTkButton(root, text="Reset",  compound="left", command=rows_def.reset_script)
+button_reset = CTkButton(root, text="Reset",  
+                         compound="left", 
+                         fg_color = "transparent",
+                         border_color="#FFCC70",
+                         border_width=2,
+                         command=rows_def.reset_script)
 button_reset.pack(pady=10)
 
 label_row = CTkLabel(root,text =n)
